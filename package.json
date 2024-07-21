@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "@visx/gradient": "^3.3.0",
+    "@visx/group": "^3.3.0",
+    "@visx/hierarchy": "^3.3.0",
+    "@visx/responsive": "^3.10.2",
+    "@visx/shape": "^3.5.0",
+    "@wernerglinka/linkcomponent": "^1.0.7",
+    "linked-controls": "^1.0.4",
+    "use-force-update": "^1.0.11"
+  }
+}

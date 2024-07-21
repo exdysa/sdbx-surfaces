@@ -1,0 +1,51 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+.text-updater-node {
+  height: 50px;
+  border: 1px solid #eee;
+  padding: 5px;
+  border-radius: 5px;
+  background: white;
+}
+
+.text-updater-node label {
+  display: block;
+  color: #777;
+  font-size: 12px;
+}
+
+.chart {
+  position:absolute;
+  left : 0px;
+  right : 0px;
+  z-index: 1;
+}
+
+.tree {
+  position:absolute;
+  left : 0px;
+  top : 20px;
+  z-index: 2;
+}
+
+.visx-pie-gradient {
+  position:absolute;
+  left : 0px;
+  top : 0px;
+  z-index: 2;
+}
+
+.terminal {
+  background-image: linear-gradient(#ffffff, #000000); 
+}
