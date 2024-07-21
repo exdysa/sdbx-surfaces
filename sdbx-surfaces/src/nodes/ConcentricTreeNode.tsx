@@ -1,10 +1,9 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Group } from '@visx/group';
 import { hierarchy, Tree } from '@visx/hierarchy';
-import { GradientDarkgreenGreen, GradientLightgreenGreen, GradientOrangeRed, GradientPinkBlue, GradientPinkRed, GradientPurpleOrange, GradientPurpleTeal, GradientSteelPurple, GradientTealBlue, LinearGradient, RadialGradient } from '@visx/gradient';
+import { LinearGradient } from '@visx/gradient';
 import { pointRadial } from 'd3-shape';
 import useForceUpdate from './useForceUpdate';
-import LinkControls from './LinkControls';
 import getLinkComponent from './getLinkComponent';
 
 interface TreeNode {
@@ -62,11 +61,12 @@ export default function Example({
   height: totalHeight,
   margin = defaultMargin,
 }: LinkTypesProps) {
-  const [layout, setLayout] = useState<string>('polar');
-  const [orientation, setOrientation] = useState<string>('horizontal');
-  const [linkType, setLinkType] = useState<string>('step');
-  const [stepPercent, setStepPercent] = useState<number>(0.5);
+  const [layout] = useState<string>('polar');
+  const [orientation] = useState<string>('horizontal');
+  const [linkType] = useState<string>('step');
+  const [stepPercent] = useState<number>(0.5);
   const forceUpdate = useForceUpdate();
+ // removed setStepPercent setLinktype setLayout, setOrientation
 
   const innerWidth = totalWidth - margin.left - margin.right;
   const innerHeight = totalHeight - margin.top - margin.bottom;

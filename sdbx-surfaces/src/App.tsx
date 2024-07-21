@@ -15,7 +15,7 @@ import '@xyflow/react/dist/style.css';
 import { initialNodes, nodeTypes } from './nodes';
 import { initialEdges, edgeTypes } from './edges';
 
-const handleStyle = { left: 10 };
+// const handleStyle = { left: 10 };
  
 
 export default function App() {

@@ -1,9 +1,9 @@
 /* eslint-disable @typescript-eslint/no-use-before-define */
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Pie, { ProvidedProps, PieArcDatum } from '@visx/shape/lib/shapes/Pie';
 import { scaleOrdinal } from '@visx/scale';
 import { Group } from '@visx/group';
-import { GradientDarkgreenGreen, GradientLightgreenGreen, GradientOrangeRed, GradientPinkBlue, GradientPinkRed, GradientPurpleOrange, GradientPurpleTeal, GradientSteelPurple, GradientTealBlue, LinearGradient, RadialGradient } from '@visx/gradient';
+import { RadialGradient } from '@visx/gradient';
 import letterFrequency, { LetterFrequency } from '@visx/mock-data/lib/mocks/letterFrequency';
 import browserUsage, { BrowserUsage as Browsers } from '@visx/mock-data/lib/mocks/browserUsage';
 import { animated, useTransition, interpolate } from '@react-spring/web';
